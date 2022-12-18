@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),
+      "vue-web-terminal": resolve(__dirname, "./lib/vue-web-terminal.mjs")
     },
   },
 });
