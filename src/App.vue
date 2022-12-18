@@ -10,7 +10,7 @@
     </div>
     <div v-else>
       <div>
-        <img :src="require('@/assert/logo.svg')" class="logo" alt="terminal-logo">
+        <img :src="require('@/asset/logo.svg')" class="logo" alt="terminal-logo">
         <h1 class="title">vue-web-terminal</h1>
         <p class="des">A lightweight, powerful and highly extensible web page emulation command line terminal plugin.</p>
         <p class="des">一个轻量、功能强大、拓展性高的网页仿真命令行终端插件。</p>
