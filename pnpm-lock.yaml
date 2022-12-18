@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@codemirror/lang-javascript': ^6.1.2
+  '@codemirror/theme-one-dark': ^6.1.0
   '@types/node': ^18.11.15
   '@typescript-eslint/eslint-plugin': ^5.46.1
   '@typescript-eslint/parser': ^5.46.1
@@ -13,14 +15,16 @@ specifiers:
   vite: ^4.0.1
   vue: ^3.2.31
   vue-codemirror: ^6.x
-  vue-web-terminal: ^2.1.3
+  vue-web-terminal: ^3.x
 
 dependencies:
+  '@codemirror/lang-javascript': 6.1.2
+  '@codemirror/theme-one-dark': 6.1.0
   axios: 1.2.1
   codemirror: 6.0.1
   vue: 3.2.45
   vue-codemirror: 6.1.1_vhikcdkubtgbuxk47tdob2ofvi
-  vue-web-terminal: 2.1.3_vue@3.2.45
+  vue-web-terminal: 3.1.3_vue@3.2.45
 
 devDependencies:
   '@types/node': 18.11.15
@@ -75,6 +79,18 @@ packages:
       '@lezer/common': 1.0.2
     dev: false
 
+  /@codemirror/lang-javascript/6.1.2:
+    resolution: {integrity: sha512-OcwLfZXdQ1OHrLiIcKCn7MqZ7nx205CMKlhe+vL88pe2ymhT9+2P+QhwkYGxMICj8TDHyp8HFKVwpiisUT7iEQ==}
+    dependencies:
+      '@codemirror/autocomplete': 6.4.0
+      '@codemirror/language': 6.3.2
+      '@codemirror/lint': 6.1.0
+      '@codemirror/state': 6.1.4
+      '@codemirror/view': 6.7.1
+      '@lezer/common': 1.0.2
+      '@lezer/javascript': 1.3.2
+    dev: false
+
   /@codemirror/language/6.3.2:
     resolution: {integrity: sha512-g42uHhOcEMAXjmozGG+rdom5UsbyfMxQFh7AbkeoaNImddL6Xt4cQDL0+JxmG7+as18rUAvZaqzP/TjsciVIrA==}
     dependencies:
@@ -104,6 +120,15 @@ packages:
 
   /@codemirror/state/6.1.4:
     resolution: {integrity: sha512-g+3OJuRylV5qsXuuhrc6Cvs1NQluNioepYMM2fhnpYkNk7NgX+j0AFuevKSVKzTDmDyt9+Puju+zPdHNECzCNQ==}
+    dev: false
+
+  /@codemirror/theme-one-dark/6.1.0:
+    resolution: {integrity: sha512-AiTHtFRu8+vWT9wWUWDM+cog6ZwgivJogB1Tm/g40NIpLwph7AnmxrSzWfvJN5fBVufsuwBxecQCNmdcR5D7Aw==}
+    dependencies:
+      '@codemirror/language': 6.3.2
+      '@codemirror/state': 6.1.4
+      '@codemirror/view': 6.7.1
+      '@lezer/highlight': 1.1.3
     dev: false
 
   /@codemirror/view/6.7.1:
@@ -357,6 +382,13 @@ packages:
     resolution: {integrity: sha512-3vLKLPThO4td43lYRBygmMY18JN3CPh9w+XS2j8WC30vR4yZeFG4z1iFe4jXE43NtGqe//zHW5q8ENLlHvz9gw==}
     dependencies:
       '@lezer/common': 1.0.2
+    dev: false
+
+  /@lezer/javascript/1.3.2:
+    resolution: {integrity: sha512-c3QOdmTG2HE4M7wt8/pthzqib194ph3CUdTIyNM1+yH2jE4WClAUGSNEcruOY47auSRsegpqBMOb1zWFovFPUw==}
+    dependencies:
+      '@lezer/highlight': 1.1.3
+      '@lezer/lr': 1.2.5
     dev: false
 
   /@lezer/lr/1.2.5:
@@ -1664,19 +1696,19 @@ packages:
       - supports-color
     dev: true
 
-  /vue-json-viewer/2.2.22_vue@3.2.45:
-    resolution: {integrity: sha512-3oPH5BxoUWva/qp7wNJj+15FBXyi9Yu5VDW4mCWivjHR1pUpMv34fjqqxML7jh2uOqm1S/3Xks5nQ5JjC5+OWw==}
+  /vue-json-viewer/3.0.4_vue@3.2.45:
+    resolution: {integrity: sha512-pnC080rTub6YjccthVSNQod2z9Sl5IUUq46srXtn6rxwhW8QM4rlYn+CTSLFKXWfw+N3xv77Cioxw7B4XUKIbQ==}
     peerDependencies:
-      vue: ^2.6.9
+      vue: ^3.2.2
     dependencies:
       clipboard: 2.0.11
       vue: 3.2.45
     dev: false
 
-  /vue-web-terminal/2.1.3_vue@3.2.45:
-    resolution: {integrity: sha512-T865dagW/5q35T3xzwS84757LX/jZzMzRROAFa4sM42FwhJsvWU8/jht0eHr6shTCug13ewbp/BO4j/06FlXWA==}
+  /vue-web-terminal/3.1.3_vue@3.2.45:
+    resolution: {integrity: sha512-7w1J67eln1vNn4JqV5xZ6p+p/EDZcVJezi3lkuZkfSYtNZETrHV9xRfZ+MBryym85HrZR4+FKytBNy5SZ5MFXw==}
     dependencies:
-      vue-json-viewer: 2.2.22_vue@3.2.45
+      vue-json-viewer: 3.0.4_vue@3.2.45
     transitivePeerDependencies:
       - vue
     dev: false
